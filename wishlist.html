@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wishlist - Red Reel Theater</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="home.html" style="color: #dc143c; text-decoration: none;">
+                    <h1>Red Reel Theater</h1>
+                </a>
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search wishlist..." class="search-input">
+                <button class="search-btn">🔍</button>
+            </div>
+            <div class="nav-actions">
+                <a href="wishlist.html" class="wishlist-link">
+                    <span class="heart-icon">❤️</span>
+                    <span class="wishlist-count" id="wishlistCount">0</span>
+                </a>
+                <a href="home.html" class="btn btn-secondary" style="margin-left: 1rem; text-decoration: none;">
+                    ← Back to Home
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main style="margin-top: 120px;">
+        <section class="wishlist-section">
+            <div class="container">
+                <h1 style="text-align: center; font-size: 3rem; color: #dc143c; margin-bottom: 2rem;">
+                    My Wishlist
+                </h1>
+                
+                <div class="wishlist-stats">
+                    <p style="text-align: center; color: #ccc; font-size: 1.2rem; margin-bottom: 3rem;">
+                        <span id="wishlistItemCount">0</span> items in your wishlist
+                    </p>
+                </div>
+
+                <div class="wishlist-grid" id="wishlistGrid">
+                    <!-- Wishlist items will be loaded here -->
+                </div>
+
+                <div class="empty-wishlist" id="emptyWishlist" style="display: none;">
+                    <div style="text-align: center; padding: 4rem 2rem;">
+                        <div style="font-size: 4rem; margin-bottom: 1rem;">💔</div>
+                        <h3 style="color: #dc143c; margin-bottom: 1rem;">Your wishlist is empty</h3>
+                        <p style="color: #ccc; margin-bottom: 2rem;">Start adding movies and series you want to watch!</p>
+                        <a href="home.html" class="btn btn-primary">Browse Movies</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-gradient"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Red Reel Theater</h3>
+                    <p>Your ultimate destination for movies and series</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-column">
+                        <h4>Company</h4>
+                        <a href="#">About Us</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Press</a>
+                    </div>
+                    <div class="link-column">
+                        <h4>Support</h4>
+                        <a href="#">Help Center</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                    <div class="link-column">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#">📘</a>
+                            <a href="#">🐦</a>
+                            <a href="#">📷</a>
+                            <a href="#">📺</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Red Reel Theater. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="wishlist.js"></script>
+</body>
+</html>
